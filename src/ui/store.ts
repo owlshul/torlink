@@ -7,7 +7,7 @@ import type { SourceGroup, SourceId } from "../sources/types";
 
 export type View = "splash" | "browser";
 
-export type Category = "all" | "games" | "movies" | "tv" | "anime";
+export type Category = "all" | "games" | "movies" | "tv" | "anime" | "general" | "software";
 
 export type Section = Category | "downloads" | "seeding";
 
@@ -17,6 +17,8 @@ export const CATEGORIES: { key: Category; label: string; group?: SourceGroup }[]
   { key: "movies", label: "Movies", group: "Movies" },
   { key: "tv", label: "TV", group: "TV" },
   { key: "anime", label: "Anime", group: "Anime" },
+  { key: "general", label: "General", group: "General" },
+  { key: "software", label: "Applications", group: "Software" },
 ];
 
 export type Region = "sidebar" | "content" | "help";

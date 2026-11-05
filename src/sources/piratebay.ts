@@ -6,9 +6,11 @@ const API = "https://apibay.org";
 
 const MOVIE_CATS = new Set([201, 202, 207, 209]);
 const TV_CATS = new Set([205, 208]);
+const APP_CATS = new Set([300, 301, 302, 303, 304, 305, 306, 399]);
 
 const TOP_MOVIES = `${API}/precompiled/data_top100_207.json`;
 const TOP_TV = `${API}/precompiled/data_top100_208.json`;
+const TOP_APPS = `${API}/precompiled/data_top100_300.json`;
 
 interface ApibayItem {
   id?: string;
@@ -102,4 +104,13 @@ export const tpbTv: Source = {
   homepage: "https://thepiratebay.org",
   reportsHealth: true,
   search: (query, opts = {}) => search(query, TV_CATS, TOP_TV, "tpb-tv", opts),
+};
+
+export const tpbApps: Source = {
+  id: "tpb-apps",
+  label: "TPB",
+  groups: ["Software"],
+  homepage: "https://thepiratebay.org",
+  reportsHealth: true,
+  search: (query, opts = {}) => search(query, APP_CATS, TOP_APPS, "tpb-apps", opts),
 };

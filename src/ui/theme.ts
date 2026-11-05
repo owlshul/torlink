@@ -36,6 +36,12 @@ export const SOURCE_STYLE: Record<SourceId, { tag: string; color: string }> = {
   subsplease: { tag: "SUB", color: "#b9a7e6" },
   "tpb-movies": { tag: "TPB", color: "#5fd0c5" },
   "tpb-tv": { tag: "TPB", color: "#5fd0c5" },
+  "tpb-apps": { tag: "TPB", color: "#5fd0c5" },
+  "x1337-movies": { tag: "1337", color: "#f6a55c" },
+  "x1337-tv": { tag: "1337", color: "#f6a55c" },
+  "x1337-apps": { tag: "1337", color: "#f6a55c" },
+  knaben: { tag: "KNB", color: "#34d399" },
+  torrentgalaxy: { tag: "TGX", color: "#c084fc" },
   bittorrented: { tag: "BT", color: "#7db8f0" },
 };
 

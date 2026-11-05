@@ -6,9 +6,15 @@ export type SourceId =
   | "subsplease"
   | "tpb-movies"
   | "tpb-tv"
+  | "tpb-apps"
+  | "x1337-movies"
+  | "x1337-tv"
+  | "x1337-apps"
+  | "knaben"
+  | "torrentgalaxy"
   | "bittorrented";
 
-export type SourceGroup = "Games" | "Movies" | "TV" | "Anime";
+export type SourceGroup = "Games" | "Movies" | "TV" | "Anime" | "General" | "Software";
 
 export interface TorrentResult {
   infoHash: string;
